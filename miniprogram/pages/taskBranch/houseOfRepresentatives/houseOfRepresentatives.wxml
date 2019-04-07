@@ -1,0 +1,31 @@
+<view class="container">
+
+  <!-- <view class="page-body">
+    <view class="page-section">
+      <view class="page-body-info">
+        <text class="page-body-text">下滑页面即可刷新</text>
+      </view>
+      <view class="btn-area">
+        <button bindtap="stopPullDownRefresh">停止刷新</button>
+      </view>
+    </view>
+  </view> -->
+    <block wx:for="{{proposals}}" wx:key="_id">
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">问题：</view>
+                    <view class="weui-media-box__desc">{{item.question}}</view>
+                    <view class="weui-media-box__title weui-media-box__title_in-text">方案：</view>
+                    <view class="weui-media-box__desc">{{item.programme}}</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">发起人：{{item.userInfo.nickName}}</view>
+                        <view class="weui-media-box__info__meta">支持度：{{item.supportStaff ? item.supportStaff.length : 0}}</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra" bindtap='support' data-id="{{index}}" data-supportState="{{item.supportState}}" style='color:{{item.supportState ? "red" : "#cecece" }}'>支持</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+
+</view>

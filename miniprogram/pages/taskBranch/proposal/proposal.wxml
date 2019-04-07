@@ -1,0 +1,37 @@
+<!--  -->
+<form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="weui-cells__title">问题：</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+                <input class="weui-input" name="question" placeholder="请输入问题" />
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells__title">解决方案：</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <textarea class="weui-textarea" placeholder="请输入解决方案" style="height: 3.3em"  name="programme"/>
+                <view class="weui-textarea-counter">0/200</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="page-section page-section-gap">
+        <radio-group name="type">
+            <label>
+                <radio value="1" />
+                工具
+            </label>
+            <label>
+                <radio value="2" />
+                工作
+            </label>
+        </radio-group>
+    </view>
+    
+    <view class="button-sp-area">
+        <button type="primary" formType="submit" plain="true">提案</button>
+    </view>
+</form>

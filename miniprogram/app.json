@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/taskBranch/index/index",
+    "pages/taskBranch/houseOfRepresentatives/houseOfRepresentatives",
+    "pages/taskBranch/proposal/proposal"
+    
+    
+  ],
+  
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+    "tabBar": {
+      "color": "#7A7E83",
+      "selectedColor": "#3cc51f",
+      "borderStyle": "black",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/taskBranch/index/index",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/taskBranch/proposal/proposal",
+          "text": "提案"
+        },
+        {
+          "pagePath": "pages/taskBranch/houseOfRepresentatives/houseOfRepresentatives",
+          "text": "众议院"
+        }
+      ]
+    }
+}
