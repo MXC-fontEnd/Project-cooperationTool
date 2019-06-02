@@ -98,7 +98,6 @@ function onUpdate(collection,id,data,callback) {
   })
 }
 
-
 module.exports = {
   onAdd,
   onQuery,

@@ -2,11 +2,10 @@
   "pages": [
     "pages/taskBranch/index/index",
     "pages/taskBranch/houseOfRepresentatives/houseOfRepresentatives",
-    "pages/taskBranch/proposal/proposal"
-    
-    
+    "pages/taskBranch/proposal/proposal",
+    "pages/taskBranch/bj/bj",
+    "pages/taskBranch/hs/hs"
   ],
-  
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
@@ -14,24 +13,33 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
-    "tabBar": {
-      "color": "#7A7E83",
-      "selectedColor": "#3cc51f",
-      "borderStyle": "black",
-      "backgroundColor": "#ffffff",
-      "list": [
-        {
-          "pagePath": "pages/taskBranch/index/index",
-          "text": "首页"
-        },
-        {
-          "pagePath": "pages/taskBranch/proposal/proposal",
-          "text": "提案"
-        },
-        {
-          "pagePath": "pages/taskBranch/houseOfRepresentatives/houseOfRepresentatives",
-          "text": "众议院"
-        }
-      ]
-    }
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#103894",
+    "list": [
+      {
+        "pagePath": "pages/taskBranch/hs/hs",
+        "text": "黑水"
+        // "text": "黑水"
+      },
+      {
+        "pagePath": "pages/taskBranch/index/index",
+        "text": "绿木"
+      },
+      {
+        "pagePath": "pages/taskBranch/proposal/proposal",
+        "text": "红火"
+      },
+      {
+        "pagePath": "pages/taskBranch/houseOfRepresentatives/houseOfRepresentatives",
+        "text": "黄土"
+      },
+      {
+        "pagePath": "pages/taskBranch/bj/bj",
+        "text": "白金"
+      }
+    ]
+  }
 }
